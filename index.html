@@ -1,7 +1,25 @@
-
 <html>
+
 	<head>
 		<title>ENLACE DIRECTO TBK</title>
+		
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+function changeText(texto){
+	     let urlFinal = "https://mipago.page.link/?link=https://portales.bancochile.cl/personas/mi-pago-2-0?"+texto+"&apn=cl.bancochile.mi_pago&isi=915134450&ibi=cl.bancochile.mipago&efr=1";
+     $("#urlChange").text(urlFinal);
+     $("#urlClick").attr('href',urlFinal);
+}
+$(document).ready(function(){
+  $("input").change(function(){
+  	changeText($(this).val());
+    alert("The text has been changed."+$(this).val());
+
+  });
+});
+</script>
+
 	</head>
 	<body style="background-color: black;">
 		<!--
@@ -42,7 +60,25 @@
 	</br>
 	</br>
 		<h1 style="color: #ffffff">Dynamic Link para TBK</h1>
-		<a href="https://mipago.page.link/?link=https://portales.bancochile.cl/personas/mi-pago-2-0?simpleCode=B2472721?screen=PagoTBK&apn=cl.bancochile.mi_pago&isi=B2386797&ibi=cl.bancochile.mipago&efr=1"><h4 style="color: #ffffff">1- B2472721</h4></a>
+		<a href="https://mipago.page.link/?link=https://portales.bancochile.cl/personas/mi-pago-2-0?simpleCode=B2457574?screen=PagoTBK&apn=cl.bancochile.mi_pago&isi=B2386797&ibi=cl.bancochile.mipago&efr=1"><h4 style="color: #ffffff">1- B2457574</h4></a>
 		<!--<a href="https://mipago.page.link/PagoQrTBK?simpleCode=A8844884"><h4 style="color: #ffffff">2- https://mipago.page.link/PagoQrTBK?simpleCode=A8844884</h4></a>-->
+		
+	</br>
+	</br>
+		<h1 style="color: #ffffff">///////////////////----////////</h1>
+		<h1 style="color: #ffffff">Generador Dynamic Link</h1>
+		
+
+	</br>
+
+		<p style="color: #ffffff">Recomendaciones (borrar las {{}}) <p>
+		<p style="color: #ffffff">Tbk = <code>{{simpleCode=B2457574?screen=PagoTBK}}</code></p>
+		<p style="color: #ffffff">Tbk Ingreso manual qr = <code>{{showIngresarCodigoManual=true?screen=PagoQR}}</code></p>
+		<p style="color: #ffffff">Bcx = <code>{{codigoQr=B2374455?screen=PagoQrBcx}}</code></p>
+		<p style="color: #ffffff">Bcx = <code>{{tab=2?screen=TarjetasDigitales}}</code></p>
+		
+	</br>
+	<input id="paramsUrl">
+	<a id="urlClick" style="color: #ffffff"><h2>Url generado :</h2><h2 id="urlChange" style="color: #ffffff"></h2></a>
 	</body>
 </html>
