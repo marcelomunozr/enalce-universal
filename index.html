@@ -7,14 +7,14 @@
 <script>
 
 function changeText(texto){
-	     let urlFinal = "https://mipago.page.link/?link=https://portales.bancochile.cl/personas/mi-pago-2-0?"+texto+"&apn=cl.bancochile.mi_pago&isi=915134450&ibi=cl.bancochile.mipago&efr=1";
+     let urlFinal = "https://mipago.page.link/?link=https://portales.bancochile.cl/personas/mi-pago-2-0?"+texto+"&apn=cl.bancochile.mi_pago&isi=915134450&ibi=cl.bancochile.mipago&efr=1";
      $("#urlChange").text(urlFinal);
      $("#urlClick").attr('href',urlFinal);
 }
 $(document).ready(function(){
   $("input").change(function(){
   	changeText($(this).val());
-    alert("The text has been changed."+$(this).val());
+    // alert("The text has been changed."+$(this).val());
 
   });
 });
@@ -45,6 +45,8 @@ $(document).ready(function(){
 		<a href="https://mipago2.page.link/PagoTBK?link=https://portales.bancochile.cl/personas/mi-pago-2-0/?simpleCode=A7164946&screen=PagoTBK"><h1 style="color: #ffffff">3- QA</h1></a>
 </br>
 </br>	-->
+		<!-- ESTO ES DE MI PAGO -->
+<!-- 
 		<h1 style="color: #ffffff">DeepLink Pago TBK</h1>
 		<a href="bancochilemipago://PagoTBK?codigoSimpleQr=A7164946"><h4 style="color: #ffffff">1- bancochilemipago://PagoTBK?codigoSimpleQr=A7164946</h4></a>
 		<a href="bancochilemipago://?codigoSimpleQr=A7164946"><h4 style="color: #ffffff">2- bancochilemipago://?codigoSimpleQr=A7164946</h4></a>
@@ -62,7 +64,7 @@ $(document).ready(function(){
 		<h1 style="color: #ffffff">Dynamic Link para TBK</h1>
 		<a href="https://mipago.page.link/?link=https://portales.bancochile.cl/personas/mi-pago-2-0?simpleCode=B2457574?screen=PagoTBK&apn=cl.bancochile.mi_pago&isi=B2386797&ibi=cl.bancochile.mipago&efr=1"><h4 style="color: #ffffff">1- B2457574</h4></a>
 		<!--<a href="https://mipago.page.link/PagoQrTBK?simpleCode=A8844884"><h4 style="color: #ffffff">2- https://mipago.page.link/PagoQrTBK?simpleCode=A8844884</h4></a>-->
-		
+		<!--
 	</br>
 		
 	</br>
@@ -70,8 +72,8 @@ $(document).ready(function(){
 		<a href="bancochilemipago://ActividadReciente"><h4 style="color: #ffffff">1- ActividadReciente</h4></a>
 		
 	</br>
+		 -->
 	</br>
-		<h1 style="color: #ffffff">///////////////////----////////</h1>
 		<h1 style="color: #ffffff">Generador Dynamic Link</h1>
 		
 
