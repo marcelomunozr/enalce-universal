@@ -10,8 +10,9 @@ function changeText(texto){
 	// URL MI BANCO QA LIMPIO = https://mibanco3.page.link/?link=https://mibanco3.page.link/pagoqr&apn=cl.bancochile.mi_banco&isi=1516872542&ibi=cl.bancochile.mibanco3&efr=1
 	// URL MI BANCO QA = https://mibanco3.page.link/?link=https://mibanco3.page.link/pagoqr?"+texto+"&apn=cl.bancochile.mi_banco&isi=1516872542&ibi=cl.bancochile.mibanco3&efr=1
 	// URL MI PAGO PROD = https://mipago.page.link/?link=https://portales.bancochile.cl/personas/mi-pago-2-0?"+texto+"&apn=cl.bancochile.mi_pago&isi=915134450&ibi=cl.bancochile.mipago&efr=1
-     let urlFinal = "https://mibanco.page.link/?link=https://portales.bancochile.cl/personas/mi-banco?"+texto+"&apn=cl.bancochile.mi_banco&isi=1516872542&ibi=cl.bancochile.mibanco3;
 	// https://mibanco.page.link/?link=https://portales.bancochile.cl/personas/mi-banco&apn=cl.bancochile.mi_banco&isi=1516872542&ibi=cl.bancochile.mibanco3
+     let urlFinal = "https://mibanco.page.link/?link=https://portales.bancochile.cl/personas/mi-banco?"+texto+"&apn=cl.bancochile.mi_banco&isi=1516872542&ibi=cl.bancochile.mibanco3;
+	
      $("#urlChange").text(urlFinal);
      $("#urlClick").attr('href',urlFinal);
 }
